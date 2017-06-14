@@ -28,9 +28,58 @@
     <div class="wrapper">
 
       <section>
-        <div id="title">
-          <h1>3d printer company with IoT</h1>
-          <p></p>
+        <!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
+
+<div class="w3-container">
+  <h2>3d printer company with IoT</h2>
+  <p>To highlight the current trend of IoT projects, Hyunsoo company is the best choice to conduct the work.</p>
+
+  <div class="w3-bar w3-black">
+    <button class="w3-bar-item w3-button tablink w3-red" onclick="openCity(event,'IoT')">IoT</button>
+    <button class="w3-bar-item w3-button tablink" onclick="openCity(event,'3D printer')">3D printer</button>
+    <button class="w3-bar-item w3-button tablink" onclick="openCity(event,'Related projects')">Related projects</button>
+  </div>
+  
+  <div id="IoT" class="w3-container w3-border city">
+    <h2>IoT</h2>
+    <p>IoT is abbreviation of Internet of Things connecting components to industry, building and government herb system etc.</p>
+  </div>
+
+  <div id="3D printer" class="w3-container w3-border city" style="display:none">
+    <h2>3D printer</h2>
+    <p>3D printer industry is main IoT projects with open source method coding with feedback from the product to the end users</p> 
+  </div>
+
+  <div id="Related projects" class="w3-container w3-border city" style="display:none">
+    <h2>Related projects</h2>
+    <p>Laser sintering and FDM project is main task for IoT 3D printer works.</p>
+  </div>
+</div>
+
+<script>
+function openCity(evt, cityName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("city");
+  for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " w3-red";
+}
+</script>
+
+</body>
+</html>
+
           <img src="https://lh3.googleusercontent.com/-XpHKpR6xCj8/WUEebXK7mmI/AAAAAAAABn4/gF0ieDtIihouOlXxUk0_rXiRmjyfFxc7wCL0BGAs/w530-d-h315-p/3dprinter%2Botaniemi.jpg" style="width:300px;height:300px;" alt="Home"; align="center";>
         
           
